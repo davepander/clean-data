@@ -1,24 +1,35 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1343\cocoasubrtf160
-{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
-{\colortbl;\red255\green255\blue255;\red38\green38\blue38;}
-{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid1\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
-{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
-\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720
+---
+title: "Readme"
+author: "David Anderson"
+date: "November 22, 2015"
+output: html_document
+---
+## Getting and Cleaning Data Project
 
-\f0\fs32 \cf2 \expnd0\expndtw0\kerning0
-script name: "run_analysis.R"\
-\
-\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
-Read Training and Testing data and merge\
-\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	2	}\expnd0\expndtw0\kerning0
-Data labels are read from the provided files ("features.txt", "activity_labels.txt") and assigned to the new table\
-\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	3	}Relevant \expnd0\expndtw0\kerning0
-features are subset ("mean" or "std" in their names)\
-\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	4	}\expnd0\expndtw0\kerning0
-"tidy_data" data set is created, listing all the columns by the "mean" function over the (subject, activity) key pairs\
-\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	5	}\expnd0\expndtw0\kerning0
-\'93tidy_data\'94 is output as a TXT file called "tidy_data.txt"}
+David Anderson
+
+Repo for the submission of the course project for the Johns Hopkins Getting and Cleaning Data course.
+
+### Overview
+This project serves to demonstrate the collection and cleaning of a tidy data set that can be used for subsequent
+analysis. A full description of the data used in this project can be found at [The UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+
+[The source data for this project can be found here.](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+
+### Making Modifications to This Script
+Once you have obtained and unzipped the source files, you will need to make one modification to the R file before you can process the data.
+Note that on line 26 of run_analysis.R, you will set the path of the working directory to relect the location of the source files
+in your own directory.
+
+### Project Summary
+The following is a summary description of the project instructions
+
+You should create one R script called run_analysis.R that does the following. 
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive activity names. 
+5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+
+### Additional Information
+You can find additional information about the variables, data and transformations in the CodeBook.MD file.
